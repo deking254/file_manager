@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Light background for contrast */
+}
+
+.navbar {
+    background-color: #007BFF;
+    /* Blue navbar */
+    padding: 15px;
+}
+
+.title {
+    color: white;
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+.page-title {
+    color: #007BFF;
+    /* Blue title */
+}
+
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.item-table th,
+.item-table td {
+    border: 1px solid #007BFF;
+    /* Blue border */
+    padding: 10px;
+    text-align: left;
+}
+
+.item-table th {
+    background-color: #FFD700;
+    /* Yellow header */
+    color: #333;
+    /* Dark text for contrast */
+}
+
+.item-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Light gray for even rows */
+}
+
+.item-table tr:hover {
+    background-color: #e0e0e0;
+    /* Light gray on hover */
+}
+
+a.button {
+    background-color: #ffc107;
+    /* Yellow button */
+    color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    /* Ensure it behaves like a button */
+}
+
+button:hover {
+    background-color: #ffca2c;
+    /* Slightly darker yellow on hover */
+}

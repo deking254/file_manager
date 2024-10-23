@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    /* Light blue background */
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    /* Main blue color */
+    padding: 20px;
+}
+
+.top-left h1 {
+    font-size: 24px;
+    color: white;
+}
+
+.top-right {
+    margin-right: 20px;
+}
+
+a.button {
+    background-color: #ffc107;
+    /* Yellow button */
+    color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    /* Ensure it behaves like a button */
+}
+
+a.button:hover {
+    background-color: #ffca2c;
+    /* Slightly darker yellow on hover */
+}
+
+main {
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+    justify-content: space-evenly;
+    /* Align to the left */
+    height: calc(100vh - 60px);
+    /* Full height minus header */
+    padding-left: 20px;
+    /* Space from the left */
+    flex-direction: row;
+}
+
+.text-container {
+    max-width: 900px;
+    /* Control width of text area */
+}
+
+main h2 {
+    font-size: 32px;
+    /* Heading size */
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 70px;
+    /* Increased paragraph text size */
+    margin-bottom: 30px;
+}
+
+.register-button {
+    /* Push to the right */
+    align-self: center;
+    /* Center vertically in the flex container */
+    margin-right: 20px;
+    /* Space from the right edge */
+}
+
+
+/* Profile button on the navbar and its subcomponents */
+
+.profile {
+    position: relative;
+    /* For positioning the dropdown */
+}
+
+.profile-button {
+    background: none;
+    /* Remove default button styling */
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.profile-icon {
+    width: 30px;
+    /* Set size for the profile icon */
+    height: 30px;
+}
+
+.dropdown {
+    display: none;
+    /* Hide dropdown by default */
+    position: absolute;
+    /* Position it relative to the profile button */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    /* Optional border for dropdown */
+    z-index: 1000;
+    /* Ensure it appears above other elements */
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f8ff;
+    /* Change background on hover */
+}
+
+.profile:hover .dropdown {
+    display: block;
+    /* Show dropdown on hover */
+}
+
+/* End of the profile components */

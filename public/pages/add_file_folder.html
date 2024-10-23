@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/add_file_folder.css">
+    <title>Simple Form</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <form id="file-folder-add-form">
+            <h2>Create New Folder</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="type">Select Type:</label>
+            <select id="type" name="type" required>
+                <option value="file">File</option>
+                <option value="folder">Folder</option>
+            </select>
+
+            <label for="parent">Select parent:</label>
+            <select id="parent" name="parent" required>
+                <option value="null" selected>--Please choose an option--</option>
+            </select>
+
+            <label for="data">Data:</label>
+            <input type="text" id="data" name="data" required>
+
+            <label for="isPublic">Public:</label>
+            <select id="isPublic" name="isPublic" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <button type="submit">Create</button>
+        </form>
+    </div>
+    <script type='module' src="../js/add_file_folder.js"></script>
+</body>
+
+</html>

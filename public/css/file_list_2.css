@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align the icon and text */
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.icon {
+    width: 40px;
+    /* Adjust size as needed */
+    height: 40px;
+    /* Adjust size as needed */
+    margin-bottom: 10px;
+    fill: #ffc107;
+    /* Space between icon and text */
+}
+
+
+/* File/folder item styles */
+/* ellipsis-vertical 1 */
+
+position: absolute;
+left: 75%;
+right: 6.48%;
+top: 7.92%;
+bottom: 72.28%;
+
+border-radius: 3px;
+
+/* Endo of the File/folder item styles */
