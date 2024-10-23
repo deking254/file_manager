@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Light background for contrast */
+}
+
+.navbar {
+    background-color: #007BFF;
+    /* Blue navbar */
+    padding: 15px;
+}
+
+.title {
+    color: white;
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+.page-title {
+    color: #007BFF;
+    /* Blue title */
+}
+
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.item-table th,
+.item-table td {
+    border: 1px solid #007BFF;
+    /* Blue border */
+    padding: 10px;
+    text-align: left;
+}
+
+.item-table th {
+    background-color: #FFD700;
+    /* Yellow header */
+    color: #333;
+    /* Dark text for contrast */
+}
+
+.item-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+    /* Light gray for even rows */
+}
+
+.item-table tr:hover {
+    background-color: #e0e0e0;
+    /* Light gray on hover */
+}
+
+a.button {
+    background-color: #ffc107;
+    position: absolute;
+    /* Allows positioning within the container */
+    top: 10px;
+    /* Adjust to set the vertical position */
+    right: 10px;
+    /* Yellow button */
+    color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    /* Ensure it behaves like a button */
+}
+
+button:hover {
+    background-color: #ffca2c;
+    /* Slightly darker yellow on hover */
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align the icon and text */
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    font-size: small;
+}
+
+.icon {
+    width: 40px;
+    /* Adjust size as needed */
+    height: 40px;
+    /* Adjust size as needed */
+    margin-bottom: 10px;
+    fill: #ffc107;
+    /* Space between icon and text */
+}
+
+/* .item:hover {
+    
+    /* Increased opacity on hover */
+
+/* Slight scale for effect */
+
+
+
+
+.ellipsis {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    height: 20px;
+    opacity: 0%;
+}
+
+.ellipsis:hover .dropdown {
+    transform: scale(1.15);
+    display: list-item;
+}
+
+.item:hover {
+    background-color: #007BFF;
+    transform: scale(1.05);
+}
+
+.item:hover .ellipsis {
+    opacity: 1;
+    /* Make .ellipsis visible on hover */
+}
+
+/* This is the nav bar styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    /* Main blue color */
+    padding: 20px;
+}
+
+.top-left h1 {
+    font-size: 24px;
+    color: white;
+}
+
+.top-right {
+    margin-right: 20px;
+}
+
+/* End of nav bar styling */
+
+/* Profile button on the navbar and its subcomponents */
+
+.profile {
+    position: relative;
+    /* For positioning the dropdown */
+}
+
+.profile-button {
+    background: none;
+    /* Remove default button styling */
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.profile-icon {
+    width: 30px;
+    /* Set size for the profile icon */
+    height: 30px;
+}
+
+.dropdown {
+    display: none;
+    /* Hide dropdown by default */
+    position: absolute;
+    /* Position it relative to the profile button */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    /* Optional border for dropdown */
+    z-index: 1000;
+    /* Ensure it appears above other elements */
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f8ff;
+    /* Change background on hover */
+}
+
+.profile:hover .dropdown {
+    display: block;
+    /* Show dropdown on hover */
+}
+
+/* End of the profile components */
+
+.add-btn {
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
